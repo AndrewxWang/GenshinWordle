@@ -60,5 +60,12 @@ const genshinWords = [
     "domain",
     "primos",
     "attack",
-
+    "chubby",
+    "whales",
+    "ftpbtw",
+    "okcode",
+    "tuonto",
+    "tenten",
+    "zyoxxx",
+    "LLLLLL"
 ]

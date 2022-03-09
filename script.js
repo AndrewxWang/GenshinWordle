@@ -119,7 +119,6 @@ function changeButtonColor(btnNum, color){
 }
 
 function changeWordColor(word){
-    console.log("here");
     var lettersUsed = [0, 0, 0, 0, 0, 0];
     for(var i = 0; i < word.length; i++){
         var currChar = word.substring(i,i+1);
