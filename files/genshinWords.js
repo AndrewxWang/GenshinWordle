@@ -66,6 +66,14 @@ const genshinWords = [
     "okcode",
     "tuonto",
     "tenten",
+    "tsikyo",
+    "tonyto",
     "zyoxxx",
-    "LLLLLL"
+    "llllll",
+    "flower",
+    "leaker",
+    "twitch",
+    "stream",
+    "kazari",
+    
 ]
