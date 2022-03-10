@@ -75,5 +75,6 @@ const genshinWords = [
     "twitch",
     "stream",
     "kazari",
+    "smadge",
     
 ]

@@ -10,7 +10,8 @@ function homePage() {
 }
 
 function createWordle(){
-    wordleWord = getRandomWord();
+//    wordleWord = getRandomWord();
+    wordleWord = "welkin";
     console.log(wordleWord);
     wordleList = [
         ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
@@ -120,31 +121,41 @@ function changeButtonColor(btnNum, color){
 
 function changeWordColor(word){
     var lettersUsed = [0, 0, 0, 0, 0, 0];
+    var uncertain = [];
+    var uncertainBtn = [];
+
     for(var i = 0; i < word.length; i++){
         var currChar = word.substring(i,i+1);
         var btnNum = (6*(wordCount+1))-(6-i);
 
         if (wordleWord.includes(currChar)){
-            // console.log(currChar);
-            // console.log(wordleWord.substring(i,i+1));
             if (currChar == wordleWord.substring(i,i+1)){
                 lettersUsed[i]+=1;
                 changeButtonColor(btnNum, "#69A964")
             } else {
-                var wordleWordCurrChar = wordleWord.indexOf(currChar);
-                // console.log(lettersUsed[wordleWordCurrChar]);
-                // console.log(wordleWord.split(currChar).length-1);
-                if (lettersUsed[wordleWordCurrChar] < wordleWord.split(currChar).length-1){
-                    lettersUsed[wordleWordCurrChar]+=1;
-                    changeButtonColor(btnNum, "#C8B357")
-                } else {
-                    changeButtonColor(btnNum, "#787C7E")
-                }
+                // for loop checks green first. then we go see yellow
+                uncertain.push(currChar);
+                uncertainBtn.push(btnNum);
             }
         } else {
             changeButtonColor(btnNum, "#787C7E")
         }        
         // console.log(lettersUsed);
+    }
+    for (var i = 0; i < uncertain.length; i++){
+        var currChar = uncertain[i];
+        var btnNum = uncertainBtn[i];
+
+        var wordleWordCurrChar = wordleWord.indexOf(currChar);
+        
+            console.log(lettersUsed[wordleWordCurrChar]);
+            console.log(wordleWord.split(currChar).length-1);
+            if (lettersUsed[wordleWordCurrChar] < wordleWord.split(currChar).length-1){
+                lettersUsed[wordleWordCurrChar]+=1;
+                changeButtonColor(btnNum, "#C8B357")
+            } else {
+                changeButtonColor(btnNum, "#787C7E")
+            }
     }
 }
 
