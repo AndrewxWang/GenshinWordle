@@ -10,8 +10,7 @@ function homePage() {
 }
 
 function createWordle(){
-//    wordleWord = getRandomWord();
-    wordleWord = "welkin";
+    wordleWord = getRandomWord();
     console.log(wordleWord);
     wordleList = [
         ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
