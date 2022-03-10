@@ -34,12 +34,11 @@ function getKeyInput(e){
     var keyCode = e.keyCode;
     if (lettersOnly(keyCode) && wordCount < 6){
         // console.log("words: " + wordCount)
-        // console.log(checkWord(wordleList[wordCount][currIndex]))
         // 13 is enter and 8 is backspace
         if (keyCode == 13){
             var currWord = wordleList[wordCount].join("");
             // console.log(currWord);
-            if (currIndex >= 5 && checkWord(currWord) && wordCount < 6){
+            if (currIndex >= 5 && checkWord(currWord.toLowerCase()) && wordCount < 6){
                 //console.log(currWord)
                 // enters word and checks it
                 currIndex = -1;
@@ -147,8 +146,8 @@ function changeWordColor(word){
 
         var wordleWordCurrChar = wordleWord.indexOf(currChar);
         
-            console.log(lettersUsed[wordleWordCurrChar]);
-            console.log(wordleWord.split(currChar).length-1);
+            // console.log(lettersUsed[wordleWordCurrChar]);
+            // console.log(wordleWord.split(currChar).length-1);
             if (lettersUsed[wordleWordCurrChar] < wordleWord.split(currChar).length-1){
                 lettersUsed[wordleWordCurrChar]+=1;
                 changeButtonColor(btnNum, "#C8B357")

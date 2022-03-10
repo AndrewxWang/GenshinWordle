@@ -3,7 +3,6 @@ const genshinWords = [
     "albedo",
     "archon",
     "baizhu",
-    "battle",
     "beidou",
     "bokuso",
     "childe",
