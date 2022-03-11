@@ -78,6 +78,7 @@ button {
 
 #keyboard {
     bottom: 5%;
+    color: black;
     left: 25%;
     right: 25%;
     position: fixed;
