@@ -10,7 +10,7 @@ function homePage() {
 }
 
 function createWordle(){
-    wordleWord = getRandomWord();
+    wordleWord = "lector" //getRandomWord();
     console.log(wordleWord);
     wordleList = [
         ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
@@ -138,12 +138,21 @@ function changeButtonColor(btnId, color){
 
 function changeKeyboardColor(btnId, color){
     var currColor = document.getElementById(btnId).style.backgroundColor;
-    if (currColor != "rgb(105, 169, 100)" || currColor == "rgb(120, 124, 126)"){
+    console.log(currColor)
+    //green
+    if (color == "rgb(105, 169, 100)"){
         document.getElementById(btnId).style.backgroundColor = color;
-        document.getElementById(btnId).style.color = "white";        
-    } else if (color == "rgb(105, 169, 100)"){
+        document.getElementById(btnId).style.color = "white";
+    } else if (color == "rgb(200, 179, 87)") {
+        if (currColor != "rgb(105, 169, 100)"){
             document.getElementById(btnId).style.backgroundColor = color;
-            document.getElementById(btnId).style.color = "white";        
+            document.getElementById(btnId).style.color = "white";
+        }
+    } else {
+        if (currColor != "rgb(200, 179, 87)"){
+            document.getElementById(btnId).style.backgroundColor = color;
+            document.getElementById(btnId).style.color = "white";       
+       }
     }
 }
 

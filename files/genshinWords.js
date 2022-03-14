@@ -93,6 +93,10 @@ const genshinWords = [
     "mshina", //Ms. Hina
     "bosses",
     "recipe",
-    "primes"
+    "primes",
+    "elpers",
+    "yupeng",
+    "mobile",
+    
     
 ]
