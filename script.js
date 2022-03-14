@@ -10,7 +10,7 @@ function homePage() {
 }
 
 function createWordle(){
-    wordleWord = "lector" //getRandomWord();
+    wordleWord = getRandomWord();
     console.log(wordleWord);
     wordleList = [
         ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
