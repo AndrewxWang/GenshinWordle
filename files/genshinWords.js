@@ -97,6 +97,8 @@ const genshinWords = [
     "elpers",
     "yupeng",
     "mobile",
+    "shield",
     
+
     
 ]

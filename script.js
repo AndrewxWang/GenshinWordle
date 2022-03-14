@@ -11,6 +11,7 @@ function homePage() {
 
 function createWordle(){
     wordleWord = getRandomWord();
+
     console.log(wordleWord);
     wordleList = [
         ["&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp", "&nbsp"],
@@ -149,7 +150,7 @@ function changeKeyboardColor(btnId, color){
             document.getElementById(btnId).style.color = "white";
         }
     } else {
-        if (currColor != "rgb(200, 179, 87)"){
+        if (currColor != "rgb(200, 179, 87)" && currColor != "rgb(105, 169, 100)"){
             document.getElementById(btnId).style.backgroundColor = color;
             document.getElementById(btnId).style.color = "white";       
        }
