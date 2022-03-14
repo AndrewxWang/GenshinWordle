@@ -223,12 +223,29 @@ function endGame(bool){
         }
         document.getElementById("theWord").innerHTML = "The word was: " + wordleWord.toUpperCase();
         
+        document.getElementById("retryBtn").value = "Play Again";
+
         document.getElementById("endScreen").style.display = "block";        
         setTimeout(function(){
             document.getElementById("endScreen").style.opacity = "1";
             document.getElementById("wordle").style.opacity = "0.5";
         }, 200);
     }, 800);
+}
+
+function howTo(){
+    setTimeout(function(){
+        document.getElementById("winOrLose").innerHTML = "HOW TO PLAY";
+        document.getElementById("theWord").innerHTML = "Type a 6 letter Genshin Impact word. Some genshin content creators and twitch memes are also included. If there is any word/person missing, I apologize ;-;";
+        
+        document.getElementById("endScreen").style.display = "block";
+        document.getElementById("retryBtn").value = "Play";
+
+        setTimeout(function(){
+            document.getElementById("endScreen").style.opacity = "1";
+            document.getElementById("wordle").style.opacity = "0.5";
+        }, 200);
+    }, 100);
 }
 
 function makeKeyboard(){

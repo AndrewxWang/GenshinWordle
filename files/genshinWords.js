@@ -88,7 +88,6 @@ const genshinWords = [
     "yaksha",
     "herald",
     "events",
-    "statue",
     "seirai",
     "mshina", //Ms. Hina
     "bosses",
@@ -98,7 +97,9 @@ const genshinWords = [
     "yupeng",
     "mobile",
     "shield",
+    "minlin",
+    "aozang",
+    "chests",
     
-
     
 ]
